@@ -8,7 +8,9 @@ form#feedbackForm {
 h2 {
     margin-top: 10px;
 }
-
+h1 {
+    font-size: 1.75em;
+}
 .emph {
     margin-top: 2px;
     border-top: 4px solid #2a7997;
@@ -18,15 +20,24 @@ button {
     margin-bottom: 20px;
 }
 
-.skip {
-    padding: 0px 0px 40px 0px;
+.topban {
+    padding: 0px 0px 0px 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #d6078e !important;
 }
-
+.outbox {
+    background-color: #eaeaea;
+}
 .calbox {
     background-color: #f4f4f4;
     padding: 25px;
-    margin: 0 auto;
+    margin: 0 0 20px 0;
     border-top: 4px solid #2a7997;
+    border-left: 2px solid #ffffff;
+
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 .callout {
@@ -46,10 +57,12 @@ button {
 
 .graybox {
     background-color: #fbfbfb;
+}
+
+.whitebox {
+    background-color: #ffffff;
     padding: 10px 0px 10px 20px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 10px 0 0 0;
 }
 
 h3 {
@@ -243,6 +256,7 @@ p {
 .pbutton a {
     color: #ffffff !important;
     text-decoration: none;
+    border-color: #ffffff;
 }
 
 .blbutton a {
@@ -293,9 +307,22 @@ h4 {
     padding-left: 10px;
 }
 .pix {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px 0px 20px;
 }
 
 .fl {
     margin-bottom: 0;
+}
+
+.s2 {
+    font-size: 1.75em;
+}
+
+.nm {
+    margin-top: 0;
+}
+
+.nm2 {
+    margin-top: 0;
+    margin-left: 25px;
 }
