@@ -246,7 +246,7 @@
         </header>
 
         <div class="topdiv sticky-top">
-            <nav class="navbar navbar-expand-md bg-transparent py-0 sticky-top">
+            <nav class="navbar navbar-expand-sm bg-transparent py-0 sticky-top">
                 <div class="container">
                     <button
                         class="navbar-toggler"
@@ -288,22 +288,7 @@
                                     >Design Updates</a
                                 >
                             </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    aria-current="page"
-                                    href="#property-owner"
-                                    >Property Owner Outreach</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    aria-current="page"
-                                    href="#next-steps"
-                                    >Next Steps</a
-                                >
-                            </li>
+
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
@@ -316,6 +301,16 @@
                                     ></i
                                 ></a>
                             </li>
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="#next-steps"
+                                    >Next Steps</a
+                                >
+                            </li>
+
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
@@ -329,37 +324,7 @@
                 </div>
             </nav>
         </div>
-        <div class="topban" id="sec-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="">
-                            <a role="button" href="#survey">
-                                <button
-                                    type="button"
-                                    class="pbutton"
-                                    style="width: 100%"
-                                >
-                                    <h3
-                                        class="pb-0 pt-2 mt-1"
-                                        style="text-decoration: underline"
-                                    >
-                                        “We want to hear from you”
-                                    </h3>
-                                    <h4 class="mt-0 pt-0 pb-3">
-                                        Skip to survey
-                                        <i
-                                            class="far fa-comment"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </h4>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="entry-header nm" id="sec-title">
             <div class="container">
                 <div class="row">
@@ -447,7 +412,7 @@
                                     tabindex="0"
                                     translate="no"
                                     data-loaded="true"
-                                    style="visibility: visible"
+                                    style="visibility: visible; z-index: 1"
                                 >
                                     Add to calendar
                                     <span class="start atc_node notranslate"
@@ -511,7 +476,7 @@
                                     tabindex="0"
                                     translate="no"
                                     data-loaded="true"
-                                    style="visibility: visible"
+                                    style="visibility: visible; z-index: 1"
                                 >
                                     Add to calendar
                                     <span class="start atc_node notranslate"
@@ -567,7 +532,7 @@
                                     tabindex="0"
                                     translate="no"
                                     data-loaded="true"
-                                    style="visibility: visible"
+                                    style="visibility: visible; z-index: 1"
                                 >
                                     Add to calendar
                                     <span class="start atc_node notranslate"
@@ -630,7 +595,7 @@
                                     tabindex="0"
                                     translate="no"
                                     data-loaded="true"
-                                    style="visibility: visible"
+                                    style="visibility: visible; z-index: 1"
                                 >
                                     Add to calendar
                                     <span class="start atc_node notranslate"
@@ -661,8 +626,10 @@
                     </div>
                     <!-- add to Calendar box end  -->
                     <div>
-                        <h3>What is Stride?</h3>
-                        <div>
+                        <button class="accordion thr" style="margin-top: 40px">
+                            What is Stride?
+                        </button>
+                        <div class="panel">
                             <p>
                                 Sound Transit’s Stride bus rapid transit will be
                                 a fast, frequent, and reliable bus service
@@ -765,81 +732,102 @@
 
                 <!-- Right-column -->
                 <div class="col-sm-4">
-                    <p>&nbsp</p>
-                    <form
-                        action="https://el2.envirolytical.com/feedback/send"
-                        target="hiddeniframe"
-                        id="feedbackForm"
-                        method="POST"
-                    >
-                        <input type="hidden" name="projectId" value="324" />
-                        <input
-                            type="hidden"
-                            name="contact.metadatagroup.4513"
-                            value="57333"
-                        />
-                        <input
-                            type="hidden"
-                            name="RelateToCustomItemId"
-                            value="150163"
-                        />
-                        <input
-                            type="hidden"
-                            name="confirmationMessage"
-                            value="Thank you for your signing up!"
-                        /><input
-                            type="hidden"
-                            name="redirectWithoutConfirmation"
-                            value="true"
-                        />
-                        <h2>Subscribe for project news</h2>
-                        <p class="p-2">
-                            Get upcoming project news and public involvement
-                            opportunities
-                        </p>
-                        <div>
-                            <label for="eml">Email Address</label> <br />
-                            <input
-                                id="eml"
-                                type="email"
-                                class="input-small"
-                                name="contact.emailaddress"
-                                placeholder="Email"
-                            />
+                    <div class="p-4 ml-4">
+                        <div class="skip">
+                            <h3>We want to hear from you</h3>
+                            <hr class="emph" />
+                            <a role="button" href="#survey">
+                                <button
+                                    type="button"
+                                    class="pbutton"
+                                    style="width: 100%"
+                                >
+                                    Skip to survey
+                                    <i
+                                        class="far fa-comment"
+                                        aria-hidden="true"
+                                    ></i>
+                                </button>
+                            </a>
                         </div>
-                        <div
-                            class="g-recaptcha"
-                            data-sitekey="6Le3CyEUAAAAABGVRl6l5hvYXA5-DqvkN_7m_hD2"
-                            data-callback="onRecaptchaComplete"
-                            data-size="invisible"
-                        ></div>
-                        <button type="submit" class="pbutton">
-                            Subscibe now
-                        </button>
-                    </form>
+                        <p>&nbsp</p>
+                        <form
+                            action="https://el2.envirolytical.com/feedback/send"
+                            target="hiddeniframe"
+                            id="feedbackForm"
+                            method="POST"
+                        >
+                            <input type="hidden" name="projectId" value="324" />
+                            <input
+                                type="hidden"
+                                name="contact.metadatagroup.4513"
+                                value="57333"
+                            />
+                            <input
+                                type="hidden"
+                                name="RelateToCustomItemId"
+                                value="150163"
+                            />
+                            <input
+                                type="hidden"
+                                name="confirmationMessage"
+                                value="Thank you for your signing up!"
+                            /><input
+                                type="hidden"
+                                name="redirectWithoutConfirmation"
+                                value="true"
+                            />
+                            <h2>Subscribe for project news</h2>
+                            <p class="p-2">
+                                Get upcoming project news and public involvement
+                                opportunities
+                            </p>
+                            <div>
+                                <label for="eml">Email Address</label> <br />
+                                <input
+                                    id="eml"
+                                    type="email"
+                                    class="input-small"
+                                    name="contact.emailaddress"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div
+                                class="g-recaptcha"
+                                data-sitekey="6Le3CyEUAAAAABGVRl6l5hvYXA5-DqvkN_7m_hD2"
+                                data-callback="onRecaptchaComplete"
+                                data-size="invisible"
+                            ></div>
+                            <button type="submit" class="pbutton">
+                                Subscribe now
+                            </button>
+                        </form>
 
-                    <!-- callout -->
-                    <h3 class="gb">Translation Services</h3>
-                    <div class="callout">
-                        <a>통역이 필요하신 분은</a>
-                        <a>Ver este situio en espanol</a>
-                        <p>
-                            If your language is not available, please contact:
-                            1-800-201-4900/ TTY Relay: 711 or email
-                            <a>accessibility@soundtransit.org</a> for
-                            alternative formats.
-                        </p>
+                        <!-- callout -->
+                        <h3 class="gb">Translation Services</h3>
+                        <div class="callout">
+                            <a>통역이 필요하신 분은</a>
+                            <a>Ver este situio en espanol</a>
+                            <p>
+                                If your language is not available, please
+                                contact: 1-800-201-4900/ TTY Relay: 711 or email
+                                <a>accessibility@soundtransit.org</a> for
+                                alternative formats.
+                            </p>
+                        </div>
+                        <!-- end callout -->
                     </div>
-                    <!-- end callout -->
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-8">
                     <h3>
                         Skip to section - learn about Stride’s latest design
                         plans
                     </h3>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-8">
                     <div class="row">
                         <div class="col-md-4">
                             <a role="button" href="#stride">
@@ -939,12 +927,13 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <img
-                        class="ml-3"
-                        style="padding: 60px 0 0 10px"
-                        src="imgs/OA 0206-19 BRT GEC STRIDE Map 2022-02-03 copy.jpg"
-                        alt="map"
-                    />
+                    <row>
+                        <img
+                            class="ml-3 mt-1 p-2"
+                            src="imgs/OA 0206-19 BRT GEC STRIDE Map 2022-02-03 copy.jpg"
+                            alt="map"
+                        />
+                    </row>
                 </div>
             </div>
         </div>
@@ -1203,6 +1192,159 @@
                             </p>
                         </div>
                     </div>
+                    <h3>Working with property owners</h3>
+                    <p>
+                        As the design continues to advance, we are continuing
+                        conversations on individual site plans and answering
+                        project-related questions. We contacted individual
+                        property owners to begin the property acquisition
+                        process between September 2021 and February 2023.
+                    </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="container">
+                                    <button class="accordion thr">
+                                        How have you interacted with property
+                                        owners along Northeast 145th Street and
+                                        SR 522 in the past?
+                                    </button>
+                                    <div class="panel">
+                                        <p>
+                                            The project team has actively
+                                            engaged with property owners who may
+                                            be affected by the project since
+                                            early in the design process.
+                                            Property owners in Seattle,
+                                            Shoreline, on the east side of SR
+                                            522 in Lake Forest Park, on the west
+                                            side of SR 522 in Lake Forest Park,
+                                            Kenmore, and Bothell were invited in
+                                            phases to discuss how the project
+                                            may impact their property
+                                            specifically and to answer
+                                            project-related questions between
+                                            January 2020 and August 2021.
+                                            In-person property owner meetings
+                                            were shifted to virtual meetings due
+                                            to social distancing recommendations
+                                            for COVID-19. Property owner were
+                                            notified of other opportunities to
+                                            engage with the project and project
+                                            information through mail, email, and
+                                            project updates.
+                                        </p>
+                                        <p>
+                                            In March 2021, the project reached
+                                            the 30% design milestone, and the
+                                            project team held an online open
+                                            house and virtual townhalls to share
+                                            the latest design information. Based
+                                            on feedback from property owners,
+                                            the route alignment in Lake Forest
+                                            Park was shifted to the west of SR
+                                            522 to minimize the number of
+                                            property owners that would require
+                                            relocation.
+                                        </p>
+                                        <p>
+                                            The project team continues to answer
+                                            project-related questions from
+                                            property owners and meet with them
+                                            on request as design refinements
+                                            progress.
+                                        </p>
+                                        <hr class="thr" />
+                                    </div>
+
+                                    <button class="accordion">
+                                        How have you interacted with property
+                                        owners along I-405 in the past?
+                                    </button>
+                                    <div class="panel">
+                                        <p>
+                                            The project team has actively
+                                            engaged with property owners who may
+                                            be affected by the project since
+                                            early in the design process.
+                                            Property owners were offered
+                                            meetings if they were affected by
+                                            the project. Due to the pandemic
+                                            caused by the COVID-19 virus in
+                                            2020, property owner engagement
+                                            meetings were shifted to virtual
+                                            meetings. The project went through
+                                            Civil Certification with Sound
+                                            Transit Board of Directors in June
+                                            of 2022.
+                                        </p>
+                                        <hr class="thr" />
+                                    </div>
+
+                                    <button class="accordion">
+                                        Property Owner resources
+                                    </button>
+                                    <div class="panel">
+                                        <p>
+                                            Sound Transit has refined the design
+                                            of the Stride program to minimize
+                                            the number of property owners that
+                                            would require relocation, and the
+                                            great majority of the properties
+                                            impacted as part of the program
+                                            involve only partial acquisitions
+                                            and temporary construction
+                                            easements. However, in a small
+                                            number of cases, a project impact is
+                                            so great to a particular property
+                                            that an owner/tenant may be
+                                            displaced in the process. Should
+                                            that occur, displaced individuals or
+                                            businesses are entitled to
+                                            relocation assistance and payments
+                                            provided by the Uniform Relocation
+                                            Assistance and Real Property
+                                            Acquisitions Policies Act of 1970
+                                            (Uniform Act).
+                                        </p>
+                                        <p>
+                                            Sound Transit will fully inform any
+                                            person who qualifies as a displaced
+                                            person of his/her rights and
+                                            entitlements to relocation
+                                            assistance and payments provided by
+                                            the Uniform Act. Relocation
+                                            Assistance Advisory Services are
+                                            available to any displaced person or
+                                            business. A displaced person or
+                                            business will be assigned a
+                                            Relocation Agent from Sound Transit
+                                            who will be available to discuss the
+                                            relocation procedures and answer
+                                            questions.
+                                        </p>
+                                        <p>
+                                            <a
+                                                href="https://www.soundtransit.org/sites/default/files/documents/property-acquisition-and-residential-relocation-handbook.pdf"
+                                                >View this graphic</a
+                                            >
+                                            to learn about the steps of the
+                                            property acquisition process. Sound
+                                            Transit’s
+                                            <a
+                                                href="https://oohsr522brt2020.blob.core.windows.net/media/Default/images/2020_0820_AcquisitionProcess_Illustrated_English.pdf"
+                                                >Acquisition and Relocation
+                                                Handbook</a
+                                            >
+                                            provides more information about the
+                                            relocation process and support.
+                                        </p>
+                                        <hr class="thr" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     <h3 class="gb ml-3">Stride’s Community Benefits </h3>
@@ -1225,7 +1367,7 @@
                     </a>
 
                     <!-- Modal -->
-                    <div
+                    <!-- <div
                         class="modal fade"
                         id="exampleModal"
                         tabindex="-1"
@@ -1258,7 +1400,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <img
                         style="padding-top: 60px"
@@ -1797,12 +1939,15 @@
                 </div>
             </div>
         </div>
-        <!-- section  Property Owner resources       -->
-        <div class="entry-header" id="property-owner">
+        <!-- section  Survey      -->
+        <div class="entry-header" id="survey">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Property Owner Outreach</h2>
+                        <h2>
+                            Survey
+                            <i class="far fa-comment" aria-hidden="true"></i>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -1811,173 +1956,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        <h3>Working with property owners</h3>
+                        <h3>Early pre-construction survey</h3>
                         <p>
-                            As the design continues to advance, we are
-                            continuing conversations on individual site plans
-                            and answering project-related questions. We
-                            contacted individual property owners to begin the
-                            property acquisition process between September 2021
-                            and February 2023.
+                            Your feedback is very important to us as we move
+                            towards construction.
                         </p>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="container">
-                                        <button class="accordion thr">
-                                            How have you interacted with
-                                            property owners along Northeast
-                                            145th Street and SR 522 in the past?
-                                        </button>
-                                        <div class="panel">
-                                            <p>
-                                                The project team has actively
-                                                engaged with property owners who
-                                                may be affected by the project
-                                                since early in the design
-                                                process. Property owners in
-                                                Seattle, Shoreline, on the east
-                                                side of SR 522 in Lake Forest
-                                                Park, on the west side of SR 522
-                                                in Lake Forest Park, Kenmore,
-                                                and Bothell were invited in
-                                                phases to discuss how the
-                                                project may impact their
-                                                property specifically and to
-                                                answer project-related questions
-                                                between January 2020 and August
-                                                2021. In-person property owner
-                                                meetings were shifted to virtual
-                                                meetings due to social
-                                                distancing recommendations for
-                                                COVID-19. Property owner were
-                                                notified of other opportunities
-                                                to engage with the project and
-                                                project information through
-                                                mail, email, and project
-                                                updates.
-                                            </p>
-                                            <p>
-                                                In March 2021, the project
-                                                reached the 30% design
-                                                milestone, and the project team
-                                                held an online open house and
-                                                virtual townhalls to share the
-                                                latest design information. Based
-                                                on feedback from property
-                                                owners, the route alignment in
-                                                Lake Forest Park was shifted to
-                                                the west of SR 522 to minimize
-                                                the number of property owners
-                                                that would require relocation.
-                                            </p>
-                                            <p>
-                                                The project team continues to
-                                                answer project-related questions
-                                                from property owners and meet
-                                                with them on request as design
-                                                refinements progress.
-                                            </p>
-                                            <hr class="thr" />
-                                        </div>
+                        <p>
+                            We are continuing to refine project designs and
+                            beginning to look towards construction starting in
+                            2024/2025 for the Stride projects. We want to hear
+                            from you about what is important for us to consider
+                            as we plan construction activities. Please take a
+                            few moments to share your thoughts on the project
+                            and future construction.  
+                        </p>
+                        <img class="pix" src="imgs/workers2.jpg" alt="" />
 
-                                        <button class="accordion">
-                                            How have you interacted with
-                                            property owners along I-405 in the
-                                            past?
-                                        </button>
-                                        <div class="panel">
-                                            <p>
-                                                The project team has actively
-                                                engaged with property owners who
-                                                may be affected by the project
-                                                since early in the design
-                                                process. Property owners were
-                                                offered meetings if they were
-                                                affected by the project. Due to
-                                                the pandemic caused by the
-                                                COVID-19 virus in 2020, property
-                                                owner engagement meetings were
-                                                shifted to virtual meetings. The
-                                                project went through Civil
-                                                Certification with Sound Transit
-                                                Board of Directors in June of
-                                                2022.
-                                            </p>
-                                            <hr class="thr" />
-                                        </div>
-
-                                        <button class="accordion">
-                                            Property Owner resources
-                                        </button>
-                                        <div class="panel">
-                                            <p>
-                                                Sound Transit has refined the
-                                                design of the Stride program to
-                                                minimize the number of property
-                                                owners that would require
-                                                relocation, and the great
-                                                majority of the properties
-                                                impacted as part of the program
-                                                involve only partial
-                                                acquisitions and temporary
-                                                construction easements. However,
-                                                in a small number of cases, a
-                                                project impact is so great to a
-                                                particular property that an
-                                                owner/tenant may be displaced in
-                                                the process. Should that occur,
-                                                displaced individuals or
-                                                businesses are entitled to
-                                                relocation assistance and
-                                                payments provided by the Uniform
-                                                Relocation Assistance and Real
-                                                Property Acquisitions Policies
-                                                Act of 1970 (Uniform Act).
-                                            </p>
-                                            <p>
-                                                Sound Transit will fully inform
-                                                any person who qualifies as a
-                                                displaced person of his/her
-                                                rights and entitlements to
-                                                relocation assistance and
-                                                payments provided by the Uniform
-                                                Act. Relocation Assistance
-                                                Advisory Services are available
-                                                to any displaced person or
-                                                business. A displaced person or
-                                                business will be assigned a
-                                                Relocation Agent from Sound
-                                                Transit who will be available to
-                                                discuss the relocation
-                                                procedures and answer questions.
-                                            </p>
-                                            <p>
-                                                <a
-                                                    href="https://www.soundtransit.org/sites/default/files/documents/property-acquisition-and-residential-relocation-handbook.pdf"
-                                                    >View this graphic</a
-                                                >
-                                                to learn about the steps of the
-                                                property acquisition process.
-                                                Sound Transit’s
-                                                <a
-                                                    href="https://oohsr522brt2020.blob.core.windows.net/media/Default/images/2020_0820_AcquisitionProcess_Illustrated_English.pdf"
-                                                    >Acquisition and Relocation
-                                                    Handbook</a
-                                                >
-                                                provides more information about
-                                                the relocation process and
-                                                support.
-                                            </p>
-                                            <hr class="thr" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img
+                            class="pix"
+                            src="https://via.placeholder.com/900x600.png?text=BRT + Survey"
+                            alt=""
+                        />
                     </div>
+
+                    <div class="col-sm-4"></div>
                 </div>
-                <div class="col-sm-4"></div>
             </div>
         </div>
         <!-- section  Next-Steps      -->
@@ -2030,174 +2033,363 @@
                                 subscribe to our email lists [add links to 522
                                 and 405 lists] to stay tuned for future updates.
                             </p>
+                            <!--Subscribe Modal -->
+
+                            <button
+                                type="button"
+                                class="btn pbutton ml-5"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contactModal"
+                            >
+                                Sign up for updates
+                            </button>
+                            <div
+                                class="modal fade"
+                                id="contactModal"
+                                tabindex="-1"
+                                aria-labelledby="contactModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://public.govdelivery.com/accounts/WASOUND/subscriber/new?topic_id=WASOUND_288"
+                                                title="Sign-Up"
+                                                style="
+                                                    height: 875px;
+                                                    width: 770px;
+                                                "
+                                            ></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button
+                                                type="button"
+                                                class="btn pbutton"
+                                                data-bs-dismiss="modal"
+                                            >
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p>
                                 Join us at our public meetings to receive more
                                 updates and provide feedback.
                             </p>
-                            <div class="row pb-5 justify-content-center">
-                                <div class="col-md-4">
-                                    <h3 class="whitebox">Feb 16</h3>
-                                    <div class="calbox">
-                                        <p>
-                                            <strong>Kenmore  </strong>
-                                        </p>
-                                        <p>5:30 - 7:30 p.m.</p>
-                                        <p>
-                                            <a
-                                                href="https:"
-                                                target="_blank"
-                                                rel="noopener"
-                                                >Zoom Meeting</a
-                                            >
-                                        </p>
-                                        <link
-                                            rel="stylesheet"
-                                            href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
-                                            type="text/css"
-                                            media="all"
-                                        />
-                                        <script
-                                            type="text/javascript"
-                                            src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
-                                            async=""
-                                            defer=""
-                                        ></script>
-
-                                        <button
-                                            title="Add to Calendar"
-                                            class="addeventatc pbutton"
+                            <div class="row pb-5 justify-content-center xb">
+                                <div
+                                    class="row p-3 outbox justify-content-center"
+                                >
+                                    <p class="pt-5">
+                                        <strong>
+                                            We are hosting public meeting
+                                            drop-in sessions to share the 60%
+                                            design plans. Come to your city’s
+                                            meeting to learn more about the
+                                            design in your city, ask questions,
+                                            and share your thoughts on future
+                                            construction.</strong
                                         >
-                                            Add to calendar
-                                            <span class="start"
-                                                >02/16/2023 5:30 PM</span
+                                    </p>
+                                    <div class="col-lg-3 p-0">
+                                        <h3 class="whitebox">Feb 28</h3>
+                                        <div class="calbox">
+                                            <p>
+                                                <strong
+                                                    >Kenmore &nbsp; &nbsp;
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    &nbsp; &nbsp; &nbsp;
+                                                    &nbsp;</strong
+                                                >
+                                            </p>
+
+                                            <p>5:30 - 7:30 p.m.</p>
+                                            <p></p>
+                                            <p>Town Hall</p>
+                                            <p></p>
+                                            <link
+                                                rel="stylesheet"
+                                                href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
+                                                type="text/css"
+                                                media="all"
+                                            />
+                                            <script
+                                                type="text/javascript"
+                                                src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
+                                                async=""
+                                                defer=""
+                                            ></script>
+
+                                            <button
+                                                title=""
+                                                class="addeventatc pbutton"
+                                                id="addeventatc1"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                tabindex="0"
+                                                translate="no"
+                                                data-loaded="true"
+                                                style="
+                                                    visibility: visible;
+                                                    z-index: 1;
+                                                "
                                             >
-                                            <span class="end"
-                                                >02/16/2023 7:30 PM</span
-                                            >
-                                            <span class="timezone"
-                                                >America/Los_Angeles</span
-                                            >
-                                            <span class="title"
-                                                >Everett Link</span
-                                            >
-                                            <span class="description"
-                                                >Virtual Scoping Meeting
-                                                #1</span
-                                            >
-                                            <span class="location"
-                                                >Online - Zoom</span
-                                            >
-                                        </button>
+                                                Add to calendar
+                                                <span
+                                                    class="start atc_node notranslate"
+                                                    >02/28/2023 5:30 PM</span
+                                                >
+                                                <span
+                                                    class="end atc_node notranslate"
+                                                    >02/28/2023 7:30 PM</span
+                                                >
+                                                <span
+                                                    class="timezone atc_node notranslate"
+                                                    >America/Los_Angeles</span
+                                                >
+                                                <span
+                                                    class="title atc_node notranslate"
+                                                    >Everett Link</span
+                                                >
+                                                <span
+                                                    class="description atc_node notranslate"
+                                                    >Virtual Scoping Meeting
+                                                    #1</span
+                                                >
+                                                <span
+                                                    class="location atc_node notranslate"
+                                                    >Online - Zoom</span
+                                                >
+                                                <span
+                                                    class="addeventatc_icon atc_node notranslate"
+                                                ></span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <h3 class="whitebox">Feb 22</h3>
-                                    <div class="calbox">
-                                        <p>
-                                            <strong>Seattle/Shoreline </strong>
-                                        </p>
-                                        <p>5:30 - 7:30 p.m.</p>
-                                        <p>
-                                            <a
-                                                href="https:"
-                                                target="_blank"
-                                                rel="noopener"
-                                                >Zoom Meeting</a
-                                            >
-                                        </p>
-                                        <link
-                                            rel="stylesheet"
-                                            href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
-                                            type="text/css"
-                                            media="all"
-                                        />
-                                        <script
-                                            type="text/javascript"
-                                            src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
-                                            async=""
-                                            defer=""
-                                        ></script>
+                                    <div class="col-lg-3 p-0">
+                                        <h3 class="whitebox">March 8</h3>
+                                        <div class="calbox">
+                                            <p>
+                                                <strong
+                                                    >Bothell &nbsp; &nbsp;
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    &nbsp;  &nbsp; &nbsp; &nbsp;
+                                                    &nbsp; &nbsp;</strong
+                                                >
+                                            </p>
+                                            <p>5:30 - 7:30 p.m.</p>
+                                            <p></p>
+                                            <p>Town Hall</p>
+                                            <p></p>
+                                            <link
+                                                rel="stylesheet"
+                                                href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
+                                                type="text/css"
+                                                media="all"
+                                            />
+                                            <script
+                                                type="text/javascript"
+                                                src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
+                                                async=""
+                                                defer=""
+                                            ></script>
 
-                                        <button
-                                            title="Add to Calendar"
-                                            class="addeventatc pbutton"
-                                        >
-                                            Add to calendar
-                                            <span class="start"
-                                                >02/22/2023 5:30 PM</span
+                                            <button
+                                                title=""
+                                                class="addeventatc pbutton"
+                                                id="addeventatc2"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                tabindex="0"
+                                                translate="no"
+                                                data-loaded="true"
+                                                style="
+                                                    visibility: visible;
+                                                    z-index: 1;
+                                                "
                                             >
-                                            <span class="end"
-                                                >02/22/2023 7:30 PM</span
-                                            >
-                                            <span class="timezone"
-                                                >America/Los_Angeles</span
-                                            >
-                                            <span class="title"
-                                                >Everett Link</span
-                                            >
-                                            <span class="description"
-                                                >Virtual Scoping Meeting
-                                                #1</span
-                                            >
-                                            <span class="location"
-                                                >Online - Zoom</span
-                                            >
-                                        </button>
+                                                Add to calendar
+                                                <span
+                                                    class="start atc_node notranslate"
+                                                    >03/08/2023 5:30 PM</span
+                                                >
+                                                <span
+                                                    class="end atc_node notranslate"
+                                                    >03/08/2023 7:30 PM</span
+                                                >
+                                                <span
+                                                    class="timezone atc_node notranslate"
+                                                    >America/Los_Angeles</span
+                                                >
+                                                <span
+                                                    class="title atc_node notranslate"
+                                                    >Everett Link</span
+                                                >
+                                                <span
+                                                    class="description atc_node notranslate"
+                                                    >Virtual Scoping Meeting
+                                                    #1</span
+                                                >
+                                                <span
+                                                    class="location atc_node notranslate"
+                                                    >Online - Zoom</span
+                                                >
+                                                <span
+                                                    class="addeventatc_icon atc_node notranslate"
+                                                ></span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4 pb-5">
-                                    <h3 class="whitebox">Feb 28</h3>
-                                    <div class="calbox">
-                                        <p>
-                                            <strong>Lake Forest Park</strong>
-                                        </p>
-                                        <p>5:30 - 7:30 p.m.</p>
-                                        <p>
-                                            <a
-                                                href="https:"
-                                                target="_blank"
-                                                rel="noopener"
-                                                >Zoom Meeting</a
-                                            >
-                                        </p>
-                                        <link
-                                            rel="stylesheet"
-                                            href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
-                                            type="text/css"
-                                            media="all"
-                                        />
-                                        <script
-                                            type="text/javascript"
-                                            src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
-                                            async=""
-                                            defer=""
-                                        ></script>
+                                    <div class="col-lg-3 p-0">
+                                        <h3 class="whitebox">March 16</h3>
+                                        <div class="calbox">
+                                            <p>
+                                                <strong
+                                                    >Seattle / Shoreline
+                                                </strong>
+                                            </p>
+                                            <p>5:30 - 7:30 p.m.</p>
+                                            <p>Town Hall</p>
+                                            <link
+                                                rel="stylesheet"
+                                                href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
+                                                type="text/css"
+                                                media="all"
+                                            />
+                                            <script
+                                                type="text/javascript"
+                                                src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
+                                                async=""
+                                                defer=""
+                                            ></script>
 
-                                        <button
-                                            title="Add to Calendar"
-                                            class="addeventatc pbutton"
-                                        >
-                                            Add to calendar
-                                            <span class="start"
-                                                >02/28/2023 5:30 PM</span
+                                            <button
+                                                title=""
+                                                class="addeventatc pbutton"
+                                                id="addeventatc3"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                tabindex="0"
+                                                translate="no"
+                                                data-loaded="true"
+                                                style="
+                                                    visibility: visible;
+                                                    z-index: 1;
+                                                "
                                             >
-                                            <span class="end"
-                                                >02/16/2023 7:30 PM</span
+                                                Add to calendar
+                                                <span
+                                                    class="start atc_node notranslate"
+                                                    >03/16/2023 5:30 PM</span
+                                                >
+                                                <span
+                                                    class="end atc_node notranslate"
+                                                    >03/16/2023 7:30 PM</span
+                                                >
+                                                <span
+                                                    class="timezone atc_node notranslate"
+                                                    >America/Los_Angeles</span
+                                                >
+                                                <span
+                                                    class="title atc_node notranslate"
+                                                    >Everett Link</span
+                                                >
+                                                <span
+                                                    class="description atc_node notranslate"
+                                                    >Virtual Scoping Meeting
+                                                    #1</span
+                                                >
+                                                <span
+                                                    class="location atc_node notranslate"
+                                                    >Online - Zoom</span
+                                                >
+                                                <span
+                                                    class="addeventatc_icon atc_node notranslate"
+                                                ></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 p-0">
+                                        <h3 class="whitebox">March 27</h3>
+                                        <div class="calbox">
+                                            <p>
+                                                <strong
+                                                    >Lake Forest Park &nbsp;
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                </strong>
+                                            </p>
+                                            <p>5:30 - 7:30 p.m.</p>
+                                            <p></p>
+                                            <p>Town Hall</p>
+                                            <p></p>
+                                            <link
+                                                rel="stylesheet"
+                                                href="https://cdn.addevent.com/libs/atc/themes/000-theme-1/theme.css"
+                                                type="text/css"
+                                                media="all"
+                                            />
+                                            <script
+                                                type="text/javascript"
+                                                src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"
+                                                async=""
+                                                defer=""
+                                            ></script>
+
+                                            <button
+                                                title=""
+                                                class="addeventatc pbutton"
+                                                id="addeventatc4"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                tabindex="0"
+                                                translate="no"
+                                                data-loaded="true"
+                                                style="
+                                                    visibility: visible;
+                                                    z-index: 1;
+                                                "
                                             >
-                                            <span class="timezone"
-                                                >America/Los_Angeles</span
-                                            >
-                                            <span class="title"
-                                                >Everett Link</span
-                                            >
-                                            <span class="description"
-                                                >Virtual Scoping Meeting
-                                                #1</span
-                                            >
-                                            <span class="location"
-                                                >Online - Zoom</span
-                                            >
-                                        </button>
+                                                Add to calendar
+                                                <span
+                                                    class="start atc_node notranslate"
+                                                    >03/27/2023 5:30 PM</span
+                                                >
+                                                <span
+                                                    class="end atc_node notranslate"
+                                                    >03/27/2023 7:30 PM</span
+                                                >
+                                                <span
+                                                    class="timezone atc_node notranslate"
+                                                    >America/Los_Angeles</span
+                                                >
+                                                <span
+                                                    class="title atc_node notranslate"
+                                                    >Everett Link</span
+                                                >
+                                                <span
+                                                    class="description atc_node notranslate"
+                                                    >Virtual Scoping Meeting
+                                                    #1</span
+                                                >
+                                                <span
+                                                    class="location atc_node notranslate"
+                                                    >Online - Zoom</span
+                                                >
+                                                <span
+                                                    class="addeventatc_icon atc_node notranslate"
+                                                ></span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2325,50 +2517,7 @@
                 </div>
             </div>
         </div>
-        <!-- section  Survey      -->
-        <div class="entry-header" id="survey">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2>
-                            Survey
-                            <i class="far fa-comment" aria-hidden="true"></i>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="8-4-cols">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3>Early pre-construction survey</h3>
-                        <p>
-                            Your feedback is very important to us as we move
-                            towards construction.
-                        </p>
-                        <p>
-                            We are continuing to refine project designs and
-                            beginning to look towards construction starting in
-                            2024/2025 for the Stride projects. We want to hear
-                            from you about what is important for us to consider
-                            as we plan construction activities. Please take a
-                            few moments to share your thoughts on the project
-                            and future construction.  
-                        </p>
-                        <img class="pix" src="imgs/workers2.jpg" alt="" />
 
-                        <img
-                            class="pix"
-                            src="https://via.placeholder.com/900x600.png?text=BRT + Survey"
-                            alt=""
-                        />
-                    </div>
-
-                    <div class="col-sm-4"></div>
-                </div>
-            </div>
-        </div>
         <!-- section  Partner Projects      -->
         <div class="entry-header" id="partner-projects">
             <div class="container">
