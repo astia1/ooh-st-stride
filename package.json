@@ -1,0 +1,19 @@
+{
+  "name": "ooh-st-stride",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astia1/ooh-st-stride.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astia1/ooh-st-stride/issues"
+  },
+  "homepage": "https://github.com/astia1/ooh-st-stride#readme"
+}
