@@ -46,6 +46,21 @@ button {
     margin-bottom: 20px;
 }
 
+.pinkcallout {
+    background-color: #eaeaea;
+    border: 2px solid #d6148e;
+    padding: 10px;
+    margin-bottom: 55px;
+}
+
+
+.pinksurvey {
+    background-color: #eaeaea;
+    border: 2px solid #d6148e;
+
+}
+
+
 .gb {
     color: #ffffff;
     background-color: #2a7997;
@@ -114,7 +129,7 @@ h3 {
 .active,
 .accordion:hover {
     background-color: rgb(255, 255, 255);
-    color: #2a7897b5;
+    color: #2a7897;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -248,11 +263,28 @@ h4 {
     margin-left: 5px;
 }
 
-p,li {
+p,
+li {
     font-size: 1em;
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
     }
+}
+body {
+    position: relative;
+}
+
+.borderbox {
+    border: 0.5px solid #000000;
+}
+
+.bbox {
+    color: #2a7897;
+}
+
+.borderbox2 {
+    background-color: #d6148e;
+    border: 0.5px solid #000000;
 }
