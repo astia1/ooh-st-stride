@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ooh-stridebrt'
           slot-name: 'staging'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3CB529870E18489C982485E6066AF08A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_10180398E78C43DFB9E8BAC7BE3BBFA2 }}
           package: .
