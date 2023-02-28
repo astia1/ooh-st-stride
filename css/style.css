@@ -35,7 +35,7 @@ button {
     margin: 0 0 20px 0;
     border-top: 4px solid #2a7997;
     border-left: 2px solid #ffffff;
-    min-height:255px;
+    min-height: 280px;
     border-right: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
 }
@@ -53,13 +53,10 @@ button {
     margin-bottom: 55px;
 }
 
-
 .pinksurvey {
     background-color: #eaeaea;
     border: 2px solid #d6148e;
-
 }
-
 
 .gb {
     color: #ffffff;
@@ -182,8 +179,8 @@ p {
     color: #ffffff !important;
     background: #d6078e !important;
     width: 100%;
-  max-width: 190px;
-  
+    max-width: 190px;
+
     height: 101px;
     font-size: 1.2em !important;
     font-style: italic;
@@ -268,16 +265,15 @@ h4 {
 p,
 li {
     font-size: 1em;
-  font-family: Hind, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-family: Hind, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
 .container {
-        max-width: 998px;
-    }
+    max-width: 998px;
+}
 
 body {
     position: relative;
 }
-
 
 .bboxHead {
     color: #ffffff;
@@ -297,7 +293,7 @@ body {
 }
 
 .buttonLinkbox {
-  padding: 0 20px 0 0;
+    padding: 0 20px 0 0;
 }
 
 .borderbox2 {
