@@ -205,7 +205,7 @@ p {
     color: #505050;
     font-size: 15px;
     font-style: italic;
-    margin: -8px 3px -3px 3px;
+    margin: -8px 3px 0 3px;
 }
 
 .dropdown-menu {
@@ -299,4 +299,9 @@ body {
 .borderbox2 {
     background-color: #2b376e;
     border: 0.5px solid #000000;
+}
+
+.alert-x {
+     background-color: #f5a623;
+    ;
 }
