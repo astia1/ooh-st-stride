@@ -302,6 +302,9 @@ body {
 }
 
 .alert-x {
-     background-color: #f5a623;
-    ;
+    background-color: #f5a623;
+}
+
+a {
+    color: #007bc1;
 }
